@@ -193,6 +193,7 @@
             "error",
             "never"
         ],
-        "prefer-object-spread": "error"
+        "prefer-object-spread": "error",
+        "react/prop-types":"off"
     }
 }

@@ -16,10 +16,10 @@
         "@types"
     ],
     "exclude": [
-        "node_modules",
+        "../../node_modules",
         "**/*.test.ts",
-        "dist",
-        "../src/server/**",
-        "../src/shared/**"
+        "../../dist",
+        "../..//src/server/**",
+        "../../src/shared/**"
     ]
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./features/App/App";
+import UnauthorizedRouter from "./features/Router/UnauthorizedRouter";
 import "./main.scss";
 
 ReactDOM.render(
-    <App />, document.getElementById("root")
+    <UnauthorizedRouter />, document.getElementById("root")
 );
