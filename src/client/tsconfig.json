@@ -1,0 +1,25 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "ESNext",
+        "module":"es6",
+        "lib": [
+            "es6",
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+    },
+    "include": [
+        "./",
+        "@types"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.test.ts",
+        "dist",
+        "../src/server/**",
+        "../src/shared/**"
+    ]
+}

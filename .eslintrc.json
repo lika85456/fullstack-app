@@ -34,9 +34,9 @@
             "error",
             "double"
         ],
-        "semi": [
-            "error",
-            "always"
+        "semi": "off",
+        "@typescript-eslint/semi": [
+            "error"
         ],
         "no-compare-neg-zero": "error",
         "no-cond-assign": "error",
@@ -79,7 +79,15 @@
         "no-case-declarations": "error",
         "no-constructor-return": "error",
         "no-else-return": "error",
-        "no-empty-function": "warn",
+        "@typescript-eslint/no-empty-interface":"warn",
+        "no-empty-function": [
+            "warn",
+            {
+                "allow": [
+                    "constructors"
+                ]
+            }
+        ],
         "no-empty-pattern": "warn",
         "no-eq-null": "error",
         "no-eval": "warn",
@@ -89,7 +97,14 @@
         "no-labels": "error",
         "no-lone-blocks": "error",
         "no-loop-func": "error",
-        "no-magic-numbers": "error",
+        "no-magic-numbers": [
+            "error",
+            {
+                "ignore": [
+                    0
+                ]
+            }
+        ],
         "no-multi-spaces": "error",
         "no-param-reassign": "error",
         "no-return-assign": "error",
@@ -99,7 +114,7 @@
         "no-sequences": "error",
         "no-throw-literal": "error",
         "no-unused-expressions": "error",
-        "no-useless-catch": "erorr",
+        "no-useless-catch": 2,
         "no-useless-return": "error",
         "no-void": "error",
         "prefer-promise-reject-errors": "error",
@@ -109,8 +124,8 @@
         "no-undef": "error",
         "no-undef-init": "error",
         "no-undefined": "error",
-        "no-unused-vars": "error",
-        "no-use-before-define": "error",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "no-unused-vars": "off",
         "array-bracket-spacing": [
             "error",
             "always",
@@ -178,7 +193,6 @@
             "error",
             "never"
         ],
-        "prefer-object-spread":"error",
-        
+        "prefer-object-spread": "error"
     }
 }
