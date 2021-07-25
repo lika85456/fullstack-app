@@ -1,3 +1,18 @@
 {
-    "presets": ["@babel/env", "@babel/react", "@babel/typescript"]
-  }
+  "presets": [
+    "@babel/env",
+    "@babel/react",
+    "@babel/typescript"
+  ],
+  "plugins": [
+    "@babel/syntax-dynamic-import",
+    "@babel/plugin-transform-runtime",
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ],
+    "@babel/transform-async-to-generator"
+  ]
+}

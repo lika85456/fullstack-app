@@ -1,4 +1,5 @@
 import React from "react";
+import AppBarContainer from "../features/AppBar/AppBarContainer";
 
 export interface HomePageProps{
 
@@ -7,9 +8,9 @@ export interface HomePageProps{
 export const HomePage: React.FunctionComponent<HomePageProps> = ({
 }) => {
     return (
-        <div>
+        <AppBarContainer>
             Home Page
-        </div>
+        </AppBarContainer>
     );
 };
 

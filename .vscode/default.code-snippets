@@ -15,5 +15,72 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
+	"Create reducer": {
+		"scope": "typescript",
+		"prefix": "reducer",
+		"body": [
+			"import { createAction, createReducer } from '@reduxjs/toolkit'",
+			"",
+			"export interface $TM_FILENAME_BASE {",
+			"",
+			"}",
+			"",
+			"export const $action = createAction<string>('$TM_FILENAME_BASE/$action');",
+			"",
+			"const initialState = {",
+			"",
+			"} as $TM_FILENAME_BASE;",
+			"",
+			"export default createReducer(initialState, (builder) => {",
+			"\tbuilder",
+			"\t.addCase($action, (state, action) => {",
+			"\t\tstate. = action.payload;",
+			"\t})",
+			"})",
+		]
+	},
+	"Create redux action": {
+		"scope": "typescript",
+		"prefix": "action",
+		"body": [
+			"export const $action = createAction<number>('$TM_FILENAME_BASE/$action');",
+		]
+	},
+	"Redux async action": {
+		"scope": "typescript",
+		"prefix": "asyncaction",
+		"body": [
+			"export const $action = createAsyncThunk('${TM_FILENAME_BASE}/$action', async ()=>{",
+			"",
+			"});"
+		]
+	},
+	"Add case in reducer builder": {
+		"scope": "typescript",
+		"prefix": "addcase",
+		"body": [
+			".addCase($1, (state, action) => {",
+			"state. = state.;",
+			"})"
+		]
+	},
+	"Redux state dispatch": {
+		"scope": "typescriptreact",
+		"prefix": "dispatch",
+		"body": [
+			"const dispatch = useDispatch();",
+		]
+	},
+	"Ignore eslint": {
+		"prefix": "ignore",
+		"body": [
+			"// eslint-disable-next-line"
+		]
+	},
+	"Classname": {
+		"prefix": "classname",
+		"body": [
+			"className={classes.$1}"
+		]
+	},
 }

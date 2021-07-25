@@ -79,13 +79,12 @@
         "no-case-declarations": "error",
         "no-constructor-return": "error",
         "no-else-return": "error",
-        "@typescript-eslint/no-empty-interface":"warn",
-        "no-empty-function": [
+        "@typescript-eslint/no-empty-interface": "warn",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": [
             "warn",
             {
-                "allow": [
-                    "constructors"
-                ]
+                "allow":["constructor"]
             }
         ],
         "no-empty-pattern": "warn",
@@ -194,6 +193,13 @@
             "never"
         ],
         "prefer-object-spread": "error",
-        "react/prop-types":"off"
+        "react/prop-types": "off",
+        "react/self-closing-comp": [
+            "error",
+            {
+                "component": true,
+                "html": true
+            }
+        ]
     }
 }
