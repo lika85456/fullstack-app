@@ -1,5 +1,11 @@
 @charset "utf-8";
 @import "~bulma/bulma";
+
+$fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts'; 
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+
 body{
     margin:0;
     padding:0;

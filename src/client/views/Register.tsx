@@ -1,6 +1,6 @@
 import React from "react";
 import AppBarContainer from "../features/AppBar/AppBarContainer";
-import RegisterForm, { UserRegisterData } from "../features/RegisterForm";
+import RegisterForm, { UserRegisterData } from "../features/RegisterForm/RegisterForm";
 
 export interface RegisterProps {
 

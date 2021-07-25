@@ -1,6 +1,7 @@
 import { createAction, createAsyncThunk, createReducer } from '@reduxjs/toolkit'
 import { UserDTO } from "../../shared/DTO/UserDTO";
 import ApiProvider from '../api/ApiProvider';
+import { RootState } from '../store';
 
 export enum UserStatus {
     LOGGED_IN,
@@ -13,6 +14,8 @@ export interface UserReducer {
     user: UserDTO,
     loginError: string
 }
+
+export const UserState = (state: RootState) => state.User;
 
 export const Login = createAsyncThunk('UserReducer/Login', async (user: { email: string, password: string }, thunkApi) => {
     return ApiProvider.UserApi.login(user.email, user.password);
