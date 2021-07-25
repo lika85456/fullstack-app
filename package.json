@@ -6,7 +6,9 @@
   "scripts": {
     "public:dev": "cross-env NODE_ENV=development webpack serve",
     "public:build": "cross-env NODE_ENV=production webpack",
-    "start": "serve dist"
+    "start": "serve dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "lika85456",
   "license": "ISC",
@@ -17,6 +19,12 @@
     "@babel/preset-react": "^7.14.5",
     "@babel/preset-typescript": "^7.14.5",
     "@reduxjs/toolkit": "^1.6.1",
+    "@storybook/addon-actions": "^6.3.5",
+    "@storybook/addon-essentials": "^6.3.5",
+    "@storybook/addon-links": "^6.3.5",
+    "@storybook/builder-webpack5": "^6.3.5",
+    "@storybook/manager-webpack5": "^6.3.5",
+    "@storybook/react": "^6.3.5",
     "@types/node": "^16.4.2",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
